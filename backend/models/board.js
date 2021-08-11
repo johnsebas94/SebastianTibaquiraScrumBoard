@@ -10,4 +10,4 @@ const boarSchema = new mongoose.Schema({
 });
 
 const board = mongoose.model("board", boardSchema);
-module.exports = board;//Export module
+module.exports = board; //Export module
