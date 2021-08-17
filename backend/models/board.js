@@ -1,12 +1,13 @@
 const mongoose = require("mongoose");
 
 //Create schema
-const boarSchema = new mongoose.Schema({
+const boardSchema = new mongoose.Schema({
   userId: { type: mongoose.Schema.ObjectId, ref: "user" },
   name: String,
   description: String,
   taskStatus: String,
-  date: { type: Date, defaut: Date.now },
+  imageUrl: String,
+  date: {type: Date, default: Date.now},
 });
 
 const board = mongoose.model("board", boardSchema);
